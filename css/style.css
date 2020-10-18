@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --primary: #000000;
+    ;
+    --grey: #333;
+    font-size: 50%;
+  }
+  
+  body {
+    background: #ededed;
+    color: var(--grey);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  header {
+    background: var(--secondary);
+    text-align:center;
+    padding: 40px 25px;
+ 
+  }
+  
+  header p {
+    color: var(--tertiary);
+    margin: 5px 0 20px;
+    font-size: 2rem;
+  
+  
+
+}
+ 
+header p {
+    color: var(--tertiary);
+    margin: 5px 0 20px;
+    font-size: 3rem;
+  
+  
+
+}
+  .page-title {
+    color: var(--primary);
+    margin-bottom: 5px;
+    margin-top: 0;
+    font-size: 5.5rem;
+  }
+  h2{
+    color: rgb(20, 18, 20);
+    font-size: 2rem;
+    text-align:right;
+
+  }
+  .btn {
+    outline: none;
+    color:#fff;
+    border: none;
+    display: inline-block;
+    padding: 10px 15px;
+    background: rgb(81, 60, 175);
+    font-size: 2.2rem;
+    border-radius: 12px;
+    position: relative;
+    top: -3px;
+    box-shadow: 0 -1px var(--grey);
+  }
+  
+  .btn:hover {
+    box-shadow: 0 2px var(--grey);
+    top: -2px;
+  }
+  .btn:active {
+    box-shadow: 0 0px var(--grey);
+    top: 0;
+  }
+  
+  .score-btn
+{ border: none;
+    font-size: 2rem;
+    background: var(--secondary);
+    color: rgb(179, 61, 209);
+    float: left;
+
+
+  }
+ 
+  
+  
+  
+  
