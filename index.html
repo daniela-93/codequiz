@@ -8,7 +8,9 @@
   <title>Coding Quiz Challenge </title>
   <tittle><button class="score-btn" id="view-score" type="submit">View high scores</button>
   
-    <h2 id="countdown">Timer</h2>
+    <body>
+        <div>Timer <span id="time">:00</span> </div>
+    </body>
   <link rel="stylesheet" href="./css/style.css">
 </head>
 </div>
@@ -17,11 +19,11 @@
       <h1 class="page-title">Coding Quiz Generator</h1>
       <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
       <div class="form-group">
-        <button class="btn" id="save-" type="submit">Start Quiz</button>
+        <button onClick="myTimer = setInterval(myCounter, 1000)">Start Quiz</button>
+       
       </header>
-    </div>
 
-
+    
 
     <script src="./js/script.js"></script>
 </body>

@@ -71,11 +71,12 @@ header p {
   }
   
   .btn:hover {
-    box-shadow: 0 2px var(--grey);
-    top: -2px;
+    background: rgb(191, 23, 233);
+    
   }
   .btn:active {
     box-shadow: 0 0px var(--grey);
+    color: rgb(191, 23, 233);
     top: 0;
   }
   
@@ -88,6 +89,7 @@ header p {
 
 
   }
+ 
  
   
   
