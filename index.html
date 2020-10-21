@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Coding Quiz Challenge </title>
-  <tittle><button class="score-btn" id="view-score" type="submit">View high scores</button>
+  <h1><button onclick="displayScore()">View High Scores</button></h1>
+
+
+
   
     <body>
         <div>Timer <span id="time">:00</span> </div>
@@ -18,12 +21,16 @@
 <header>
       <h1 class="page-title">Coding Quiz Generator</h1>
       <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
-      <div class="form-group">
-        <button onClick="myTimer = setInterval(myCounter, 1000)">Start Quiz</button>
+      <button onclick="startQuiz()">>Start Quiz</button>
+    <div class="quiz-container">
+      <div id="quiz"></div>
+    </div> 
+  
+    </div>
        
-      </header>
+  
+</header>
 
-    
 
     <script src="./js/script.js"></script>
 </body>

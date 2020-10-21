@@ -19,7 +19,10 @@
     flex-direction: column;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
-  
+  .timer{
+      text-align:right; 
+
+  }
   header {
     background: var(--secondary);
     text-align:center;
@@ -54,9 +57,16 @@ header p {
     color: rgb(20, 18, 20);
     font-size: 2rem;
     text-align:right;
+  }
+  h1{
+    color: rgb(20, 18, 20);
 
   }
-  .btn {
+
+    
+
+  
+button{
     outline: none;
     color:#fff;
     border: none;
@@ -68,30 +78,36 @@ header p {
     position: relative;
     top: -3px;
     box-shadow: 0 -1px var(--grey);
-  }
   
-  .btn:hover {
-    background: rgb(191, 23, 233);
-    
   }
-  .btn:active {
+  button:active {
     box-shadow: 0 0px var(--grey);
-    color: rgb(191, 23, 233);
     top: 0;
   }
+ button:hover{
+    background-color: rgb(204, 0, 255);
   
-  .score-btn
-{ border: none;
-    font-size: 2rem;
-    background: var(--secondary);
-    color: rgb(179, 61, 209);
-    float: left;
 
-
-  }
- 
- 
+}
+.question{
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+.questionbtn-group button {
+    outline: none;
+    color:#fff;
+    border: none;
+    display: inline-block;
+    padding: 10px 15px;
+    background: rgb(81, 60, 175);
+    font-size: 2.2rem;
+    border-radius: 12px;
+    position: relative;
+    top: -3px;
+    box-shadow: 0 -1px var(--grey);
   
-  
-  
-  
+}
+.answers label{
+  display: block;
+  margin-bottom: 20px;
+}

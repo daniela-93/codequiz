@@ -1,25 +1,52 @@
-function startTimer(duration, display) {
-    var timer = duration, minutes, seconds;
-    setInterval(function () {
-        seconds = parseInt(timer % 60, 10);
+let startButton = document.getElementById('start');
+let viewscoreButton = document.getElementById('view high score');
 
-        minutes = minutes < 10 ? "0" + minutes : minutes;
-        seconds = seconds < 10 ? "0" + seconds : seconds;
+var questions = [ {
+    prompt: "Why so JavaScript and Java have similar name?\n\
+    (a)JavaScript is a stripped-down version of Java\n(b)JavaScript's syntax is loosely based on Java's\n(c)They both originated on the island of Java\n(d)None of the above",
+     answer: "b"
+  },
 
-        display.textContent = minutes + ":" + seconds;
+    
+  
+  {
+    prompt: " ______ JavaScript is also called client-side JavaScript.\n\(a)Microsoft\n(b)Navigator\n(c)LiveWire\n(d)Native",
+    answer: "b"
+      
+      
+    },
+    
+  {
+    prompt: "Which of the following is not considered a JavaScript operator?\n\(a)new\n(b)this\n(c)delete\n(d)typeof",
+    answer: "b"
+  
+      
+    },
 
-        if (--timer < 0) {
-            timer = duration;
-        }
-    }, 1000);
-}
+  {
+  prompt: "Inside which HTML element do we put the JavaScript?\n\(a)<js>\n(b)<scripting>\n(c)<script>\n(d)<javascript>",
+  answer: "c"
 
-window.onload = function () {
-    var oneMinute = 60 ,
-        display = document.querySelector('#time');
-    startTimer(oneMinute, display);
-};
-var c = 0;
-function myCounter() {
-  document.getElementById("myTimer").innerHTML = ++c;
-}
+
+  },
+ 
+  {
+  prompt:"Which of the following attribute can hold the JavaScript version?\n\(a)LANGUAGE\n(b)SCRIPT\n(c)VERSION\n(d)None of the above",
+  answer: "a"
+  
+  },
+  var score = 0;
+
+for(var i=0; i < questions. length; i++) { 
+    var response = window.prompt (questions[i].prompt);
+    if(response == questions [i].answer) {
+        score++;
+        alert("Correct!")
+    } else {
+        alert("WRONG!");
+
+    }
+    }
+    alert("you got" + score + "/" + questions.length)
+
+
