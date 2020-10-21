@@ -1,7 +1,13 @@
-let startButton = document.getElementById('start');
-let viewscoreButton = document.getElementById('view high score');
+let startButton = document.getElementById('startQuiz');
+let scoreButton = document.getElementById('view high score');
 
-var questions = [ {
+///questions//
+var x = document.getElementById("startQuiz");
+x.addEventListener("click", promptQuiz);
+x.addEventListener("click", startTimer);
+
+function promptQuiz() {
+  var questions = [ {
     prompt: "Why so JavaScript and Java have similar name?\n\
     (a)JavaScript is a stripped-down version of Java\n(b)JavaScript's syntax is loosely based on Java's\n(c)They both originated on the island of Java\n(d)None of the above",
      answer: "b"
@@ -35,6 +41,16 @@ var questions = [ {
   answer: "a"
   
   },
+  function startTimer(){
+  }
+]
+
+
+}
+
+//view score//
+
+
   var score = 0;
 
 for(var i=0; i < questions. length; i++) { 
