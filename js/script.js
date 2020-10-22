@@ -4,8 +4,10 @@ let scoreButton = document.getElementById('view high score');
 ///questions//
 var x = document.getElementById("startQuiz");
 x.addEventListener("click", promptQuiz);
-x.addEventListener("click", startTimer);
+x.addEventListener("click", startTime);
+function startTime(){
 
+}
 function promptQuiz() {
   var questions = [ {
     prompt: "Why so JavaScript and Java have similar name?\n\
@@ -40,16 +42,13 @@ function promptQuiz() {
   prompt:"Which of the following attribute can hold the JavaScript version?\n\(a)LANGUAGE\n(b)SCRIPT\n(c)VERSION\n(d)None of the above",
   answer: "a"
   
-  },
-  function startTimer(){
-  }
-]
+
 
 
 }
 
 //view score//
-
+  ]
 
   var score = 0;
 
@@ -66,3 +65,4 @@ for(var i=0; i < questions. length; i++) {
     alert("you got" + score + "/" + questions.length)
 
 
+  }
