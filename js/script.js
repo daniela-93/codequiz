@@ -1,10 +1,7 @@
-let startButton = document.getElementById('startQuiz');
-let scoreButton = document.getElementById('view high score');
 
-///questions//
-var x = document.getElementById("startQuiz");
-x.addEventListener("click", promptQuiz);
-x.addEventListener("click", startTimer);
+//variables to DOM elements 
+var startBtn = document.getElementById('start')
+var questionsEl = document.getElementById("questions");
 
 function startTimer(){
   var myVar = setInterval(myTimer, 1000)
